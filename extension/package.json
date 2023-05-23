@@ -1,0 +1,21 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "/node_modules/youtube-transcript/dist/youtube-transcript.esm.js",
+      "require": "/node_modules/youtube-transcript/dist/youtube-transcript.commonjs.js"
+    }
+  },
+  "dependencies": {
+    "random-number": "^0.0.9",
+    "youtube-transcript": "^1.0.6"
+  }
+}
